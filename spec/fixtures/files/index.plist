@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ruby</key>
+	<dict>
+		<key>architecture</key>
+		<string>x86_64</string>
+		<key>build-date</key>
+		<string>2018-10-19 15:43 CEST</string>
+		<key>filename-sha256</key>
+		<string>c80a8a7daa88c1e9e5998d34f790727c4ba349d431307f86b76aa5e362a549e7</string>
+		<key>filename-size</key>
+		<integer>3867048</integer>
+		<key>homepage</key>
+		<string>http://www.ruby-lang.org/en/</string>
+		<key>installed_size</key>
+		<integer>15694252</integer>
+		<key>license</key>
+		<string>Ruby, BSD-2-Clause</string>
+		<key>maintainer</key>
+		<string>Leah Neukirchen &lt;leah@vuxu.org&gt;</string>
+		<key>pkgver</key>
+		<string>ruby-2.5.3_1</string>
+		<key>run_depends</key>
+		<array>
+			<string>glibc&gt;=2.28_1</string>
+			<string>gdbm&gt;=1.16_1</string>
+			<string>zlib&gt;=1.2.3_1</string>
+			<string>libffi&gt;=3.1_1</string>
+			<string>readline&gt;=7.0_1</string>
+			<string>libyaml&gt;=0.1.4_1</string>
+			<string>libcrypto43&gt;=2.7.2_1</string>
+			<string>libssl45&gt;=2.7.2_1</string>
+		</array>
+		<key>shlib-provides</key>
+		<array>
+			<string>libruby.so.2.5</string>
+		</array>
+		<key>shlib-requires</key>
+		<array>
+			<string>libc.so.6</string>
+			<string>libpthread.so.0</string>
+			<string>libdl.so.2</string>
+			<string>libcrypt.so.1</string>
+			<string>libm.so.6</string>
+			<string>ld-linux-x86-64.so.2</string>
+			<string>libgdbm_compat.so.4</string>
+			<string>libgdbm.so.6</string>
+			<string>libz.so.1</string>
+			<string>libffi.so.6</string>
+			<string>libreadline.so.7</string>
+			<string>libyaml-0.so.2</string>
+			<string>libcrypto.so.43</string>
+			<string>libssl.so.45</string>
+		</array>
+		<key>short_desc</key>
+		<string>Ruby programming language</string>
+		<key>source-revisions</key>
+		<string>ruby:606d5fe119</string>
+	</dict>
+</dict>
+</plist>
