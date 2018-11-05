@@ -2,7 +2,9 @@
   "name": "void_packages",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5"
+    "@rails/webpacker": "3.5",
+    "bulma": "^0.7.2",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"

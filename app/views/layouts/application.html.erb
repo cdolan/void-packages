@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VoidPackages</title>
+    <title><%= t(".title") %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <section class="section">
+      <div class="container is-fluid">
+        <h1 class="title"><%= t(".title") %></h1>
+
+        <%= yield %>
+      </div>
+    </section>
   </body>
 </html>

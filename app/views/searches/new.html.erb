@@ -1,0 +1,12 @@
+<div class="field">
+  <div id="search-control" class="control is-large">
+    <%= search_field_tag "search", nil, class: "input is-large", placeholder: t(".placeholder") %>
+  </div>
+</div>
+
+<aside class="menu">
+  <ul id="search-results" class="menu-list">
+  </ul>
+</aside>
+
+<%= javascript_pack_tag "search" %>
