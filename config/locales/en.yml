@@ -5,3 +5,12 @@ en:
   searches:
     new:
       placeholder: chromium, weechat, gcc, etc...
+  packages:
+    show:
+      homepage: Homepage
+      builds:
+        arch: Architecture
+        build_date: Built on
+        filename_size: Download Size
+        filename_sha256: SHA256
+        installed_size: Installed Size

@@ -1,0 +1,32 @@
+<p>
+  <h3 class="subtitle is-3">
+    <%= @package.name %> (<%= @package.version %>)
+  </h3>
+</p>
+
+<p>
+  <h4 class="subtitle is-4"><%= @package.description %></h4>
+</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= t(".builds.arch") %></th>
+      <th><%= t(".builds.build_date") %></th>
+      <th><%= t(".builds.filename_size") %></th>
+      <th><%= t(".builds.installed_size") %></th>
+      <th><%= t(".builds.filename_sha256") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @package.builds.sort.each do |build| %>
+      <tr>
+        <th><%= build.arch.name %></th>
+        <th><%= time_ago_in_words(build.build_date) %></th>
+        <th><%= number_to_human_size(build.filename_size) %></th>
+        <th><%= number_to_human_size(build.installed_size) %></th>
+        <th><code><%= build.filename_sha256 %></code></th>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
