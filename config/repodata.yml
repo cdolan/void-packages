@@ -1,0 +1,46 @@
+default: &default
+  aarch64:
+    - "http://mirror.clarkson.edu/voidlinux/current/aarch64/aarch64-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/aarch64/debug/aarch64-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/aarch64/nonfree/aarch64-repodata"
+  aarch64-musl:
+    - "http://mirror.clarkson.edu/voidlinux/current/aarch64/aarch64-musl-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/aarch64/debug/aarch64-musl-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/aarch64/nonfree/aarch64-musl-repodata"
+  armv6l:
+    - "http://mirror.clarkson.edu/voidlinux/current/armv6l-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/debug/armv6l-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/nonfree/armv6l-repodata"
+  armv6l-musl:
+    - "http://mirror.clarkson.edu/voidlinux/current/musl/armv6l-musl-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/musl/debug/armv6l-musl-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/musl/nonfree/armv6l-musl-repodata"
+  armv7l:
+    - "http://mirror.clarkson.edu/voidlinux/current/armv7l-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/debug/armv6l-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/nonfree/armv7l-repodata"
+  armv7l-musl:
+    - "http://mirror.clarkson.edu/voidlinux/current/musl/armv7l-musl-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/musl/debug/armv7l-musl-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/musl/nonfree/armv7l-musl-repodata"
+  i686:
+    - "http://mirror.clarkson.edu/voidlinux/current/debug/i686-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/i686-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/nonfree/i686-repodata"
+  x86_64:
+    - "http://mirror.clarkson.edu/voidlinux/current/debug/x86_64-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/nonfree/x86_64-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/x86_64-repodata"
+  x86_64-musl:
+    - "http://mirror.clarkson.edu/voidlinux/current/musl/debug/x86_64-musl-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/musl/nonfree/x86_64-musl-repodata"
+    - "http://mirror.clarkson.edu/voidlinux/current/musl/x86_64-musl-repodata"
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
