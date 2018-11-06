@@ -8,9 +8,12 @@ en:
   packages:
     show:
       homepage: Homepage
-      builds:
-        arch: Architecture
-        build_date: Built on
-        filename_size: Download Size
-        filename_sha256: SHA256
-        installed_size: Installed Size
+      build:
+        header:
+          arch: Architecture
+          build_date: Built
+          filename_size: Download Size
+          filename_sha256: SHA256
+          installed_size: Installed Size
+        data:
+          build_date: "%{timestamp} ago"
